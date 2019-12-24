@@ -6,27 +6,30 @@
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
-        font-size: 16px;
+
+
     }
+
+    // .headerArticle {}
 
     // Navigation Bar
 
-    .navBar {
+    .nav__bar {
         display: flex;
         flex-direction: row;
 
-        ul {
+        .nav__bar-list {
             transition: all linear 500ms;
             display: flex;
             margin: 15px;
             display: inline;
             margin-left: auto;
 
-            li {
+            .nav__bar-list-item {
                 margin: 6px;
             }
 
-            a {
+            .nav__bar-list-link {
                 display: inline;
             }
         }
@@ -34,14 +37,15 @@
 
 
 
-    .travelson {
+    .nav__bar-paragraph {
         display: flex;
         margin-left: 4%;
     }
 
     // header
-    .headerArticle {
+    .header__article {
         display: flex;
+
 
         width: 40%;
         font-family: Poppins;
@@ -53,14 +57,16 @@
         letter-spacing: 1.92px;
         text-align: center;
 
-        h1 {
+        .header__article-titel {
             margin-left: 10px;
         }
 
     }
 
     header {
-        background-image: url("img/header/header-large.jpg");
+
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 100%),
+            url("img/header/header-large.jpg");
         background-repeat: no-repeat;
         display: flex;
         height: 100vh;
@@ -68,11 +74,11 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+
+
     }
 
     // Section1
-
-
     .section1 {
 
         transition: all linear 500ms;
@@ -93,6 +99,10 @@
         img {
             width: 400px;
         }
+
+
+
+
 
 
     }
@@ -135,10 +145,11 @@
 
         min-height: 500px;
         min-width: 100%;
+        padding-bottom: 10%;
 
         h3 {
             margin-top: 10%;
-            font-family: Poppins;
+
             font-size: 36px;
             font-weight: bold;
             font-stretch: normal;
@@ -159,11 +170,12 @@
 
         div {
 
-            margin: 1px;
+            margin: 5px;
 
             img {
                 width: 200px;
                 height: 200px;
+                border: 2px solid white;
             }
 
         }
@@ -177,11 +189,13 @@
         justify-self: space-between;
 
         div {
-            margin: 1px;
+            margin: 5px;
 
             img {
                 width: 200px;
                 height: 200px;
+                border: 2px solid white;
+                margin-top: 5px;
             }
         }
     }
@@ -274,7 +288,7 @@
 }
 
 //  ====  Section 5 ======
-@media (min-width:500px) {
+@media (min-width:550px) {
     .section5 {
         display: grid;
         justify-content: center;
@@ -320,17 +334,20 @@
         z-index: 1000;
 
         margin: -50%;
-        padding: 25%;
-        font-size: 10px;
+        padding: 5% 5px;
+        font-size: 18px;
+
         display: flex;
         flex-wrap: wrap;
         align-self: center;
         justify-content: center;
         background-color: $color--last-article-background;
-        font-size: auto;
+        padding: 5px 20px;
+
 
         p {
             color: $color--text;
+
         }
     }
 

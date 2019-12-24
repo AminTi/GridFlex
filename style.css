@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
 body {
   margin: 0%;
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Poppins";
 }
 
 .headerArticle h1 {
@@ -32,7 +34,7 @@ body {
   text-align: center;
 }
 
-.navBar {
+.nav__bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,16 +47,15 @@ body {
   background: #394951;
 }
 
-.navBar .travelson {
+.nav__bar .nav__bar-paragraph {
   height: 35.1px;
-  font-family: UnicaOne;
+  font-family: "unicaone";
   font-size: 22px;
   letter-spacing: 0.96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  font-family: UnicaOne;
   color: #ff8673;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -62,7 +63,7 @@ body {
   margin-bottom: -4px;
 }
 
-ul {
+.nav__bar-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,17 +76,17 @@ ul {
   padding: 4px;
 }
 
-li {
+.nav__bar-list-item {
   display: inline;
 }
 
-li :hover {
+.nav__bar-list-item :hover {
   -webkit-transition: all linear 500ms;
   transition: all linear 500ms;
   color: #ff8673;
 }
 
-a {
+.nav__bar-list-link {
   text-decoration: none;
   margin: 5px;
   font-family: Poppins;
@@ -99,7 +100,7 @@ a {
   display: flex;
 }
 
-.headerArticle {
+.header__article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +113,7 @@ a {
   padding: 5px;
 }
 
-.headerArticle h1 {
+.header__article .header__article-titel {
   font-family: Poppins;
   font-size: 27px;
   font-weight: bold;
@@ -124,7 +125,7 @@ a {
   color: #ff8673;
 }
 
-.headerArticle p {
+.header__article .header__article-paragraph {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   font-family: Poppins;
   font-size: 16px;
@@ -213,7 +214,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 250px;
+  min-height: 500px;
   min-width: 90%;
   background-color: #394951;
 }
@@ -240,6 +241,27 @@ h2 {
   transition: all linear 1s;
   border-radius: 100%;
   opacity: 0.5;
+}
+
+.img-container div {
+  margin: 5px;
+}
+
+.img-container img {
+  border: 2px solid white;
+}
+
+.img-container2 {
+  padding-bottom: 30px;
+}
+
+.img-container2 div {
+  margin: 5px;
+}
+
+.img-container2 img {
+  border: 2px solid white;
+  margin-top: 5px;
 }
 
 .img3 {
@@ -467,8 +489,9 @@ h2 {
   background-color: white;
   margin: -50%;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   background: #9aa5aa;
+  padding: 5px 5px;
 }
 
 .last-article h3 {
@@ -538,14 +561,13 @@ footer {
 
 .navBar2 .travelson {
   height: 35.1px;
-  font-family: UnicaOne;
+  font-family: "UnicaOne";
   font-size: 22px;
   letter-spacing: 0.96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  font-family: UnicaOne;
   color: #ff8673;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
