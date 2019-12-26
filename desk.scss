@@ -262,7 +262,7 @@
 }
 
 //  section 4
-@media (min-width: 750px) {
+@media (min-width: 880px) {
 
     .section4 {
         display: grid;
@@ -294,13 +294,13 @@
         justify-content: center;
         grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
-        grid-template-areas: "img15 img16 .img19 img20"
+        grid-template-areas: "img15 img16 . img19 img20"
             "img15 img17 last-article img21 img20"
             "img18 img17  . img21 img22";
         margin: 5%;
         gap: 10px;
         min-height: 250px;
-        min-width: 90%;
+
         padding: unset;
 
     }
@@ -332,17 +332,15 @@
     .last-article {
         grid-area: last-article;
         z-index: 1000;
-
-        margin: -50%;
-        padding: 5% 5px;
+        margin: -80px;
         font-size: 18px;
-
         display: flex;
         flex-wrap: wrap;
         align-self: center;
         justify-content: center;
         background-color: $color--last-article-background;
-        padding: 5px 20px;
+        padding: 5px 10px;
+        width: unset;
 
 
         p {

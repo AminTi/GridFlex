@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -449,22 +454,21 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "img15 nada img19" "empty last-article vide" "img16  none img20";
-  gap: 10px;
-  min-height: 250px;
-  min-width: 90%;
-  padding: 4%;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+  -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-areas: "img15 img19" "last-article last-article" "img16 img20";
+  padding: 10px 10px;
   margin-top: 5%;
+  gap: 10px;
 }
 
 .img15 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img15;
+  width: 100%;
 }
 
 .img16 {
@@ -483,15 +487,27 @@ h2 {
 
 .last-article {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: last-article;
   z-index: 1000;
   background-color: white;
-  margin: -50%;
+  margin: -50px;
   text-align: center;
   font-size: 14px;
   background: #9aa5aa;
-  padding: 5px 5px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  width: 80%;
 }
 
 .last-article h3 {
@@ -504,13 +520,13 @@ h2 {
 
 .img19 {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: img19;
 }
 
 .img20 {
   -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: img20;
 }
 
